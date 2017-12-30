@@ -1,3 +1,16 @@
 *.o
 *.swp
 fm_transmitter
+
+# Music files
+*.mp3
+*.wav
+
+# Python compiled files
+*.pyc
+
+# Launcher file
+*.sh
+
+# Virtual Enviornment
+**/venv

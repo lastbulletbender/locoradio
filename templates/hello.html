@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LocoRadio</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/hello.css') }}">
+  </head>
+  <body>
+      <ul class = "navbar">
+        <li class="navbar-list"><a href = "/">Home</a></li>
+        <li class="navbar-list"><a href="/songs/">Songs</a></li>
+        <li class="navbar-list"><a href="/contact/">Contact</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="/start/star_wars.wav">
+          <img class="play-button" src="{{url_for('static', filename='play.jpg')}}"></img>
+        </a>
+        <a href="/stop/">
+          <img class="play-button" src="{{url_for('static',filename='pause.jpg')}}"></img>
+        </a>
+      </div>
+
+  </body>
+</html>
+

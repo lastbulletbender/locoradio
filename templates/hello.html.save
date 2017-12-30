@@ -1,0 +1,20 @@
+d<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/hello.css') }}">
+</head>
+<div class ="navbar">
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/contact/">Chat</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+</div>
+<body>
+<div class="margin">
+<a class="trigger" href="/start/" id="trigger">Play</a>
+<a class="trigger" href="/stop/" id="trigger">Stop</a>
+</div>
+</body>
+
+
+

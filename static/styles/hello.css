@@ -1,0 +1,43 @@
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #070707;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.navbar-list{
+  float:center;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.navbar-list a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 32px;
+  text-decoration: none;
+}
+
+.navbar-list a:hover{
+  background-color: #111111;
+}
+
+.active{
+  
+}
+
+.buttons{
+  margin-top:500px;
+  margin-left:50%;
+}
+.play-button{
+  height: 96px;
+  padding: 20px;
+}
+

@@ -8,7 +8,6 @@ parser.add_argument("-f", "--frequency", help="Set TX frequency. Acceptable rang
 arg = parser.parse_args()
 
 def main():
-    os.system('clear')
     frequency = 0
     #frequency=freq()	
     print ("Welcome to PiStation!  \nVersion 1.0 \nGPLv3 License\n")    
@@ -24,7 +23,7 @@ def main():
     print frequency
     try:
         if ".mp3" in arg.song_file.lower():
-            os.system("ffmpeg -i "+arg.song_file+" "+"-f s16le -ar 22.05k -ac 1 - | sudo ./fm_transmitter -f"+" "+frequency+" "+" - ")
+            os.system("sox "+arg.song_file+" -r 22050 -c 1 -b 16 -t wav - | sudo ./fm_transmitter -f"+" "+frequency+" "+" - ")
         elif ".wav" in arg.song_file.lower():	    
 	    os.system("sudo ./fm_transmitter -f"+" "+frequency+" "+arg.song_file)
         else:

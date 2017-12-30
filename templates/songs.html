@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+    <title>Songs</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/songs.css') }}">
+</head>
+<body>
+<div class="info-box">
+	<img class="header-fire" src ="{{ url_for('static',filename='header_fire.gif') }}"><h1>LOCORADIO</h1><img class="header-fire" src ="{{ url_for('static',filename='header_fire.gif') }}">
+	<h4>Introduction text</h4>
+</div>
+<ul class = "songs-list">
+{% for item in music %}
+    <li class = "songs"><a class = "song-link" href={{ url_for('startradio',song=item) }}> {{ item }}  </a></li>
+{% endfor %}
+</ul>
+</body>
