@@ -27,6 +27,6 @@ def shutdown():
 
 @app.route('/songs/')
 def printdir():
-	x = songs.get_songs_list()
-	return render_template('songs.html',music = x)
+	song_list = songs.get_songs_list()
+	return render_template('songs.html',music = song_list)
 
